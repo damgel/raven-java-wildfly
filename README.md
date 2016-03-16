@@ -6,7 +6,7 @@ If you are waiting for [this pull request](https://github.com/getsentry/raven-ja
 standalone.xml [Jboss Logging Subsystem](https://docs.jboss.org/author/display/WFLY8/Logging+Configuration) configuration:
 
 ```xml
-<custom-handler name="RAVEN" enabled="true" class="br.com.tecnobiz.raven.wildfly.SentryHandler" module="com.getsentry.raven">
+<custom-handler name="RAVEN" enabled="true" class=br.com.tecnobiz.raven.wildfly.JbossLoggingSentryHandler" module="com.getsentry.raven">
     <level name="ERROR"/>
     <formatter>
         <named-formatter name="PATTERN"/>
