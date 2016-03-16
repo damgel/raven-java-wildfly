@@ -22,11 +22,16 @@ Create a Wildfly Module:
 
 ```xml
 <module xmlns="urn:jboss:module:1.0" name="com.getsentry.raven">
+    <dependencies>
+        <module name="javax.api"/>
+    </dependencies>
 	<resources>
 		<resource-root path="jackson-core-2.5.0.jar" />
 		<resource-root path="guava-18.0.jar" />
 		<resource-root path="raven-7.0.0.jar" />
 		<resource-root path="raven-java-wildfly-1.0.0.jar" />
+		<resource-root path="slf4j-api-1.7.9.jar" />
+		<resource-root path="slf4j-jdk14-1.7.9.jar" />
 	</resources>
 </module>
 ```
